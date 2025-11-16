@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: b2-nginx
+  labels:
+    app: b2-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: b2-nginx
+  template:
+    metadata:
+      labels:
+        app: b2-nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:stable-alpine
+          ports:
+            - containerPort: 80
