@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: d2-nginx
+  name: c112-nginx
   labels:
-    app: d2-nginx
+    app: c112-nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: d2-nginx
+      app: c112-nginx
   template:
     metadata:
       labels:
-        app: d2-nginx
+        app: c112-nginx
     spec:
       containers:
         - name: nginx

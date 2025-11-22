@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: sub-set-b
+  name: c21-set
   namespace: tools
 spec:
   generators:
@@ -9,8 +9,8 @@ spec:
         repoURL: https://github.com/keenbytes/apps-of-apps-example
         revision: HEAD
         directories:
-          - path: apps/second-level/b1
-          - path: apps/second-level/b2
+          - path: app/c211
+          - path: app/c212
   template:
     metadata:
       name: '{{path.basename}}-app'

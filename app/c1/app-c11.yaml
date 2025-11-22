@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app-b
+  name: c11-app
   namespace: tools
 spec:
   project: default
   source:
     repoURL: https://github.com/keenbytes/apps-of-apps-example
     targetRevision: HEAD
-    path: apps/first-level/b
+    path: app/c11
   destination:
     server: https://kubernetes.default.svc
     namespace: tools
