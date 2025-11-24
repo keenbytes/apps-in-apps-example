@@ -4,7 +4,7 @@ metadata:
   name: c21-app
   namespace: tools
 spec:
-  project: default
+  project: c21-project
   source:
     repoURL: https://github.com/keenbytes/apps-of-apps-example
     targetRevision: HEAD

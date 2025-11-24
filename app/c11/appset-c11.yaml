@@ -15,7 +15,7 @@ spec:
     metadata:
       name: '{{path.basename}}-app'
     spec:
-      project: default
+      project: c111-project
       source:
         repoURL: https://github.com/keenbytes/apps-of-apps-example
         targetRevision: HEAD

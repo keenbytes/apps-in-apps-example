@@ -4,7 +4,7 @@ metadata:
   name: a21-app
   namespace: tools
 spec:
-  project: default
+  project: a21-project
   source:
     repoURL: https://github.com/keenbytes/apps-of-apps-example
     targetRevision: HEAD

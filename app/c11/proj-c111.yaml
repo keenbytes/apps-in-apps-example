@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: c111-project
+  namespace: tools
+spec:
+  description: Description
+  sourceRepos:
+    - https://github.com/keen-bytes/apps-in-apps-example
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: tools
+  namespaceResourceWhitelist:
+    - group: "*"
+      kind: "*"

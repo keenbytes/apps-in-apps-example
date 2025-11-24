@@ -4,7 +4,7 @@ metadata:
   name: c11-app
   namespace: tools
 spec:
-  project: default
+  project: c11-project
   source:
     repoURL: https://github.com/keenbytes/apps-of-apps-example
     targetRevision: HEAD
